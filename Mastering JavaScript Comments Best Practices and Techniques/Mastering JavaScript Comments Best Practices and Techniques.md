@@ -1,6 +1,6 @@
 # Mastering JavaScript Comments: Best Practices and Techniques
 
-[image](./assets/comments.png)
+![image](./assets/comments.png)
 
 As you embark on your programming journey, you’ll soon realize that writing code isn’t just about giving instructions for your computer to follow. It’s also about ensuring that your code is comprehensible to both yourself and others who may collaborate on it. One crucial method for achieving this is by incorporating comments into your code. Comments are textual annotations that are not executed by the computer but serve to explain what the code accomplishes and why it’s structured the way it is.
 
