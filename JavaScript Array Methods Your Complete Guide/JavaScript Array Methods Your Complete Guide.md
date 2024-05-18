@@ -450,8 +450,6 @@ console.log(students.find(checkStudents).age); // 22
 
 Note: This method does not execute the function for empty elements.
 
-```
-
 ### findIndex()
 
 This method is very similar to the find() method, but this time, instead of returning the element, it returns the index (position) of the first element in the array that passes the test function. It will return -1 if nothing matches. Its syntax is similar to the find() method.
@@ -697,4 +695,3 @@ console.log(doubleNumbers); // Output: [46, 112, 134, 44, 90, 114, 90, 14, 10]
 End of the Array,
 
 Happy coding….. ❤
-```
