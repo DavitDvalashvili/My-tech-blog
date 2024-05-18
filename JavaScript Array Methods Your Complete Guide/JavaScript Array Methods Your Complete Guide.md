@@ -383,8 +383,6 @@ In the callback function, you have access to each element, the index, and the or
 
 ```
 
-```
-
 // Normal function
 myArray.some(function(element, index, array){ /_ ... _/ })
 
@@ -470,15 +468,15 @@ Suppose you have an array of students, each with an object containing their name
 ```
 
 let students = [
-    { name: "John Doe", age: 22 },
-    { name: "Jane Doe", age: 33 },
-    { name: "Karl Don", age: 21 }
+{ name: "John Doe", age: 22 },
+{ name: "Jane Doe", age: 33 },
+{ name: "Karl Don", age: 21 }
 ];
 
 const checkStudents = (student) => {
-    if (student.name === "Jane Doe") {
-        return student
-    }
+if (student.name === "Jane Doe") {
+return student
+}
 };
 
 console.log(students.findIndex(checkStudents)); // 1
@@ -490,9 +488,9 @@ You can also use one line with an arrow function:
 ```
 
 let students = [
-    { name: "John Doe", age: 22 },
-    { name: "Jane Doe", age: 33 },
-    { name: "Karl Don", age: 21 }
+{ name: "John Doe", age: 22 },
+{ name: "Jane Doe", age: 33 },
+{ name: "Karl Don", age: 21 }
 ];
 
 console.log(students.findIndex((student) => student.name === "Jane Doe")); // 1
@@ -519,7 +517,7 @@ The start parameter is optional, indicating the index position from which the se
 
 let scores = [23, 56, 67, 22, 45, 57, 45, 7, 5, 34, 7];
 
-console.log(scores.indexOf(7));     // Output: 7
+console.log(scores.indexOf(7)); // Output: 7
 console.log(scores.indexOf(7, -1)); // Output: 10
 
 ```
@@ -540,9 +538,9 @@ In the callback function, you have access to each element, its index, and the or
 ```
 
 let students = [
-    { name: "John Doe", age: 22 },
-    { name: "Jane Doe", age: 33 },
-    { name: "Karl Don", age: 21 }
+{ name: "John Doe", age: 22 },
+{ name: "Jane Doe", age: 33 },
+{ name: "Karl Don", age: 21 }
 ];
 
 console.log(students.filter((student) => student.age < 30));
@@ -554,8 +552,8 @@ This will output:
 ```
 
 [
-    { "name": "John Doe", "age": 22 },
-    { "name": "Karl Don", "age": 21 }
+{ "name": "John Doe", "age": 22 },
+{ "name": "Karl Don", "age": 21 }
 ]
 
 ```
@@ -578,15 +576,15 @@ For example:
 ```
 
 let staff = [
-    { name: "John Doe", salary: 120 },
-    { name: "Jane Doe", salary: 350 },
-    { name: "Karl Don", salary: 710 }
+{ name: "John Doe", salary: 120 },
+{ name: "Jane Doe", salary: 350 },
+{ name: "Karl Don", salary: 710 }
 ];
 
 let totalSalary = 0;
 
 staff.forEach((staffPerson) => {
-    totalSalary += staffPerson.salary;
+totalSalary += staffPerson.salary;
 });
 
 console.log(totalSalary); // Output: 1180
@@ -632,15 +630,16 @@ myArray.reduce(callbackFn, initialValue)
 For example:
 
 ```
+
 let staff = [
-    { name: "John Doe", salary: 120 },
-    { name: "Jane Doe", salary: 350 },
-    { name: "Karl Don", salary: 710 }
+{ name: "John Doe", salary: 120 },
+{ name: "Jane Doe", salary: 350 },
+{ name: "Karl Don", salary: 710 }
 ];
 
 const totalSalary = staff.reduce((total, staffPerson) => {
-    total += staffPerson.salary;
-    return total;
+total += staffPerson.salary;
+return total;
 }, 0);
 
 console.log(totalSalary); // Output: 1180
@@ -667,7 +666,7 @@ For example:
 
 let numbers = [23, 56, 67, [22, 45, 57, [45, 7], 5], [34, 7]];
 
-console.log(numbers.flat());  // Output: [23, 56, 67, 22, 45, 57, [45, 7], 5, 34, 7]
+console.log(numbers.flat()); // Output: [23, 56, 67, 22, 45, 57, [45, 7], 5, 34, 7]
 console.log(numbers.flat(2)); // Output: [23, 56, 67, 22, 45, 57, 45, 7, 5, 34, 7]
 
 ```
@@ -689,7 +688,7 @@ For example:
 
 let numbers = [23, 56, 67, 22, 45, 57, 45, 7, 5];
 
-let doubleNumbers = numbers.flatMap((number) => number * 2);
+let doubleNumbers = numbers.flatMap((number) => number \* 2);
 
 console.log(doubleNumbers); // Output: [46, 112, 134, 44, 90, 114, 90, 14, 10]
 
@@ -698,3 +697,4 @@ console.log(doubleNumbers); // Output: [46, 112, 134, 44, 90, 114, 90, 14, 10]
 End of the Array,
 
 Happy coding….. ❤
+```
